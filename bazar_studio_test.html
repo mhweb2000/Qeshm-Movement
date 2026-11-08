@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101b17">
+<title>بازار استودیو | هیئت اداره تبلیغات</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--bg:#0b110f;--surface:#121d18;--surface2:#192820;--line:#2b4034;--gold:#d5b46b;--text:#f5f1e7;--muted:#a9b5aa;--green:#8eae91}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#2c4737 0,transparent 48%),var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.8}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:#0b110feF;border-bottom:1px solid #ffffff12;backdrop-filter:blur(14px)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}.brand svg{width:48px;height:48px;flex:none}.brand small{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:-5px}
+.links{display:flex;gap:22px;color:var(--muted);font-size:13px}.links a:hover{color:var(--gold)}
+.hero{text-align:center;padding:62px 0 35px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:1px}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.4;margin:8px 0;font-weight:800}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:14px}
+.ornament{color:var(--gold);margin:20px auto;font-size:21px;display:flex;align-items:center;justify-content:center;gap:14px}.ornament:before,.ornament:after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:28px 0 14px}.section-head h2{font-size:19px;margin:0}.section-head span{font-size:11px;color:var(--muted)}
+.livebox,.panel{background:linear-gradient(145deg,#18271f,#101914);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 18px 50px #0003}
+.livehead{display:flex;align-items:center;justify-content:space-between;padding:0 3px 13px;gap:12px}.livehead b{font-size:15px}.badge{font-size:11px;color:#ffd9d4;background:#632c29;border:1px solid #8f4941;border-radius:30px;padding:4px 11px}.badge i{display:inline-block;width:7px;height:7px;background:#ff7668;border-radius:50%;margin-left:6px}
+.player{aspect-ratio:16/9;min-height:220px;border-radius:13px;overflow:hidden;background:radial-gradient(circle at center,#253b2e,#080d0a 70%);border:1px solid #354b3b;display:grid;place-items:center;text-align:center;padding:20px}.play{width:66px;height:66px;border:1px solid #d5b46b88;color:var(--gold);border-radius:50%;display:grid;place-items:center;font-size:25px;margin:0 auto 12px;background:#d5b46b12}.player strong{display:block}.player p{font-size:12px;color:var(--muted);max-width:480px;margin:5px auto 0}.player iframe{width:100%;height:100%;border:0}
+.playerfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:13px 3px 0;color:var(--muted);font-size:11px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 15px;border-radius:10px;background:var(--gold);color:#182019;font-size:12px;font-weight:700}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:17px}.panel{box-shadow:none}.panel h3{font-size:16px;margin:0 0 8px}.panel p{font-size:12px;color:var(--muted);margin:0}
+.posters{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.poster{min-height:190px;border:1px solid #405342;border-radius:13px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:13px;text-align:center;background:radial-gradient(circle at 50% 35%,#36533d,#17251c 72%);position:relative}.poster:before{content:"";position:absolute;inset:8px;border:1px solid #d5b46b66;border-radius:8px;pointer-events:none}.poster .picon{font-size:25px;color:var(--gold);margin-top:8px}.poster b{font-size:13px;position:relative}.poster small{font-size:10px;color:#c6cbbd;position:relative}.poster em{font-style:normal;font-size:10px;color:var(--gold);position:relative}
+.notice{display:flex;gap:12px;align-items:center;border-top:1px solid #ffffff12;padding-top:13px;margin-top:13px}.notice-icon{width:38px;height:38px;border-radius:11px;background:#d5b46b18;color:var(--gold);display:grid;place-items:center;font-size:19px;flex:none}.notice b{font-size:12px;display:block}.notice small{font-size:10px;color:var(--muted)}
+footer{margin-top:45px;border-top:1px solid #ffffff12;padding:23px 0;text-align:center;color:#849187;font-size:11px}
+@media(max-width:680px){nav{height:68px}.links{gap:12px;font-size:11px}.brand svg{width:41px;height:41px}.hero{padding:42px 0 25px}.grid{grid-template-columns:1fr}.posters{grid-template-columns:repeat(2,1fr)}.poster{min-height:170px}.player{min-height:210px}.section-head h2{font-size:17px}}
+@media(max-width:390px){.links a:first-child{display:none}.posters{gap:8px}.poster{padding:9px;min-height:155px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+<a class="brand" href="#">
+<svg viewBox="0 0 100 100" role="img" aria-label="نشان بازار استودیو">
+ <path d="M50 4 61 23 82 18 77 39 96 50 77 61 82 82 61 77 50 96 39 77 18 82 23 61 4 50 23 39 18 18 39 23Z" fill="none" stroke="#d5b46b" stroke-width="2.5"/>
+ <path d="M50 17 59 34 77 23 66 41 83 50 66 59 77 77 59 66 50 83 41 66 23 77 34 59 17 50 34 41 23 23 41 34Z" fill="#d5b46b" opacity=".22" stroke="#d5b46b" stroke-width="1.5"/>
+ <path d="M50 34c-8 8-10 15-10 21a10 10 0 0 0 20 0c0-6-2-13-10-21Z" fill="none" stroke="#f0d89e" stroke-width="2"/>
+ <path d="M45 60h10M47 65h6" stroke="#f0d89e" stroke-width="2" stroke-linecap="round"/>
+ <circle cx="50" cy="50" r="3" fill="#f0d89e"/>
+</svg>
+<div>بازار استودیو<small>رسانه هیئت اداره تبلیغات</small></div>
+</a>
+<div class="links"><a href="#live">پخش زنده</a><a href="#posters">پوسترها</a><a href="#about">درباره ما</a></div>
+</nav></header>
+<section class="hero wrap">
+<div class="eyebrow">پایگاه رسمی اطلاع‌رسانی و پخش زنده</div>
+<h1>هیئت اداره تبلیغات</h1>
+<p>همراه لحظه‌های معنوی و برنامه‌های هیئت باشید؛ پخش زنده و اطلاعیه مراسم را از بازار استودیو دنبال کنید.</p>
+<div class="ornament">۞</div>
+</section>
+<main class="wrap">
+<section id="live">
+<div class="section-head"><h2>پخش زنده مراسم</h2><span>پخش از طریق آپارات</span></div>
+<div class="livebox">
+<div class="livehead"><b>پخش زنده هیئت اداره تبلیغات</b><span class="badge"><i></i>در انتظار پخش</span></div>
+<div class="player" id="player">
+<div><div class="play">▶</div><strong>پخش زنده به‌زودی آغاز می‌شود</strong><p>برای فعال شدن تصویر، آدرس Embed پخش زنده آپارات را در کد این فایل جایگزین کنید.</p></div>
+</div>
+<div class="playerfoot"><span>در صورت شروع مراسم، صفحه را تازه‌سازی کنید.</span><a class="btn" href="https://www.aparat.com/" target="_blank" rel="noopener">مشاهده آپارات ↗</a></div>
+</div>
+</section>
+<section id="posters">
+<div class="section-head"><h2>پوسترهای هفتگی هیئت</h2><span>اطلاعیه و برنامه مراسم</span></div>
+<div class="posters">
+<article class="poster"><div class="picon">۞</div><b>مراسم هفتگی هیئت</b><small>زمان و جزئیات برنامه</small><em>اطلاعیه شماره ۰۱</em></article>
+<article class="poster"><div class="picon">✦</div><b>محفل ذکر و دعا</b><small>برنامه هفتگی</small><em>اطلاعیه شماره ۰۲</em></article>
+<article class="poster"><div class="picon">۞</div><b>مراسم مناسبتی</b><small>اطلاعیه ویژه هیئت</small><em>اطلاعیه شماره ۰۳</em></article>
+</div>
+</section>
+<div class="grid">
+<section class="panel" id="about"><h3>درباره هیئت</h3><p>به پایگاه رسانه‌ای هیئت اداره تبلیغات خوش آمدید. تازه‌ترین اطلاعیه‌ها، پوسترهای هفتگی و پخش زنده مراسم را در این صفحه دنبال کنید.</p></section>
+<section class="panel"><h3>اطلاعیه برنامه‌ها</h3><p>جزئیات زمان و مکان مراسم از طریق پوسترهای هفتگی همین صفحه اطلاع‌رسانی خواهد شد.</p><div class="notice"><div class="notice-icon">◷</div><div><b>برنامه بعدی هیئت</b><small>اطلاعات برنامه به‌زودی منتشر می‌شود.</small></div></div></section>
+</div>
+</main>
+<footer><div class="wrap">بازار استودیو · پایگاه رسانه‌ای هیئت اداره تبلیغات</div></footer>
+<script>
+// برای نمایش پخش زنده، آدرس Embed دریافتی از آپارات را در مقدار زیر قرار دهید.
+const APARAT_EMBED_URL = "PASTE_APARAT_EMBED_URL_HERE";
+if(APARAT_EMBED_URL && !APARAT_EMBED_URL.includes("PASTE_")){
+ const frame=document.createElement("iframe");
+ frame.src=APARAT_EMBED_URL;
+ frame.title="پخش زنده هیئت اداره تبلیغات";
+ frame.allow="autoplay; fullscreen; picture-in-picture";
+ frame.allowFullscreen=true;
+ document.getElementById("player").replaceChildren(frame);
+}
+</script>
+</body>
+</html>
